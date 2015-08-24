@@ -23,8 +23,10 @@ apt-get install apache2 php5 libapache2-mod-php5 php5-fpm mysql-server mysql-cli
 cd /tmp
 curl -sS https://raw.githubusercontent.com/mekras/composer-wrap/master/composer | php
 mv composer /usr/bin/composer
+composer
 ```
 
 устанавливаем laravel installer globally
-`composer global require "laravel/installer=~1.1"
-`
+```
+composer global require "laravel/installer=~1.1"
+```
