@@ -1,6 +1,20 @@
-сначала надо обновить ОС
+сначала надо обновить ОС, но при обновлении командой `apt-get update -y` в конце возникает такая ошибка
 ```
-apt-get update -y && apt-get upgrade -y
+W: There is no public key available for the following key IDs:
+7638D0442B90D010
+W: There is no public key available for the following key IDs:
+9D6D8F6BC857C906
+```
+лечится это так
+```
+apt-get install debian-keyring debian-archive-keyring
+apt-get install
+```
+
+теперь можно обновлять ОС
+```
+apt-get update -y 
+apt-get upgrade -y
 ```
 
 потом ставим разные полезные утилиты
