@@ -54,9 +54,5 @@ curl --silent --location https://deb.nodesource.com/setup_0.12 | bash -
 apt-get install -y nodejs build-essential npm
 npm install npm -g
 npm update npm -g
-npm install bower -g 
-npm install gulp -g 
-npm install gulp laravel-elixir -g 
-npm install gulp gulp-imagemin -g 
-npm install gulp gulp-image-resize -g 
+npm install bower gulp laravel-elixir gulp-imagemin gulp-image-resize -g  
 ```
