@@ -53,7 +53,7 @@ composer global require "laravel/installer=~1.1"
 Installing Node.js via package manager
 ```
 curl --silent --location https://deb.nodesource.com/setup_0.12 | bash -
-apt-get install -y nodejs build-essential npm
+apt-get install -y nodejs build-essential
 npm install npm -g
 npm install bower gulp laravel-elixir gulp-imagemin gulp-image-resize -g  
 ```
