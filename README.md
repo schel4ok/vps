@@ -2,7 +2,7 @@
 ```
 apt-get update -y 
 ```
-но в конце возникает такая ошибка
+но на Debian 7 в конце возникает такая ошибка (на Debian 8 ошибки нету, но некоторые знатоки пишут, что она типа еще сырая для сервера)
 ```
 W: There is no public key available for the following key IDs:
 7638D0442B90D010
