@@ -42,6 +42,7 @@ apt-get install apache2 php5 libapache2-mod-php5 php5-fpm mysql-server mysql-cli
 git clone https://github.com/mekras/composer-wrap
 mv composer-wrap/composer /usr/local/bin/composer
 rm -r composer-wrap
+composer
 ```
 
 устанавливаем laravel installer globally
