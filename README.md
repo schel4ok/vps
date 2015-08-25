@@ -35,13 +35,12 @@ apt-get install apache2 php5 libapache2-mod-php5 php5-fpm mysql-server mysql-cli
 [] apache2     - Выбираем именно apache2!  
 потом на вопрос **configure database for phpmyadmin with dbconfig-common** отвечаем нет  
 
-Для Laravel нужен composer!
-нестандартная установка композера (глобально)
+Для Laravel нужен composer!  
+установка композера глобально
 ```
 cd /tmp
-curl -sS https://raw.githubusercontent.com/mekras/composer-wrap/master/composer | php
-mv composer /usr/bin/composer
-composer
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
 ```
 
 устанавливаем laravel installer globally
