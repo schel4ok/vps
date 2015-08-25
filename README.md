@@ -14,7 +14,7 @@ apt-get install apache2 php5 libapache2-mod-php5 php5-fpm mysql-server mysql-cli
 ```
 когда phpMyAdmin спросит *Выберите веб-сервер, который будет автоматически настроен для запуска phpMyAdmin.* 
 Веб-сервер для автоматической перенастройки:                                    
-[*] apache2     - Выбираем именно apache2!
+[] apache2     - Выбираем именно apache2!
 потом на вопрос **configure database for phpmyadmin with dbconfig-common** отвечаем нет
 
 Для Laravel нужен composer!
