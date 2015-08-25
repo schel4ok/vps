@@ -8,7 +8,7 @@ apt-get update -y && apt-get upgrade -y
 apt-get install mc nano vsftpd -y    
 ```
 
-далее ставим компоненты веб-сервера
+далее ставим компоненты веб-сервера (кроме nginx, т.к. я с ним пока не разобрался)
 ```
 apt-get install apache2 php5 libapache2-mod-php5 php5-fpm mysql-server mysql-client php5-mysql  php5-curl  curl phpmyadmin git -y
 ```
