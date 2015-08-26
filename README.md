@@ -24,7 +24,7 @@ apt-get upgrade -y
 
 #потом ставим разные полезные утилиты
 ```
-apt-get install mc nano vsftpd -y    
+apt-get install mc nano vsftpd zip unzip -y    
 ```
 
 #далее ставим компоненты веб-сервера (кроме nginx, т.к. я с ним пока не разобрался)
