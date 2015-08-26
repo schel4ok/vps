@@ -64,6 +64,7 @@ cd /etc/apache2/sites-available
 nano steklo-grup.conf
 
 put VirtualHost text here
+then save and exit
 
 cd ../sites-enabled
 ln -s ../sites-available/steklo-grup.conf
