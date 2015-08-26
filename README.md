@@ -70,3 +70,29 @@ cd ../sites-enabled
 ln -s ../sites-available/mysite.conf
 service apache2 restart
 ```
+
+#Теперь ставим сайт
+- ставим Laravel в папку /var/www/mysite.ru
+- меняем владельца и группу с root на www-data 
+- настраиваем права для папок
+- соединяем репозиторий на гитхабе с папкой сайта
+```
+cd /var/www
+laravel new mysite.ru
+chown -R www-data:www-data /var/www/steklo-grup.ru
+cd steklo-grup.ru
+chmod -R 755 .
+chmod -R 777 storage
+git init
+git add .
+git commit -m "Init"
+git remote add origin https://github.com/schel4ok/lara.git
+git push -u origin master
+```
+
+Для обновления laravel и расширений прописанных в composer.json надо, находясь в папке /var/www/steklo-grup.ru запустить команду 
+composer update
+
+
+далее удобней редактировать код прямо на гитхабе, потом загружать изменения на сервер при помощи команды 
+*git pull
