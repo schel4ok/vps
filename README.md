@@ -1,4 +1,4 @@
-сначала надо обновить ОС
+#сначала надо обновить ОС
 ```
 apt-get update -y 
 ```
@@ -22,12 +22,12 @@ apt-get update -y
 apt-get upgrade -y
 ```
 
-потом ставим разные полезные утилиты
+#потом ставим разные полезные утилиты
 ```
 apt-get install mc nano vsftpd -y    
 ```
 
-далее ставим компоненты веб-сервера (кроме nginx, т.к. я с ним пока не разобрался)
+#далее ставим компоненты веб-сервера (кроме nginx, т.к. я с ним пока не разобрался)
 ```
 apt-get install apache2 php5 libapache2-mod-php5 php5-fpm mysql-server mysql-client php5-mysql  php5-curl  curl phpmyadmin git -y
 ```
@@ -36,7 +36,7 @@ apt-get install apache2 php5 libapache2-mod-php5 php5-fpm mysql-server mysql-cli
 [] apache2     - Выбираем именно apache2!  
 потом на вопрос **configure database for phpmyadmin with dbconfig-common** отвечаем нет  
 
-Для Laravel нужен composer!  
+#Для Laravel нужен composer!  
 установка композера глобально (это composer-wrap вместо стандартного композера, который позволяет устанавливать пакеты типа laravel глобально для всех пользователей, а не только для root)
 ```
 git clone https://github.com/mekras/composer-wrap
@@ -45,15 +45,27 @@ rm -r composer-wrap
 composer
 ```
 
-устанавливаем laravel installer globally
+#устанавливаем laravel installer globally
 ```
 composer global require "laravel/installer=~1.1"
 ```
 
-Installing Node.js via package manager
+#Installing Node.js via package manager
 ```
 curl --silent --location https://deb.nodesource.com/setup_0.12 | bash -
 apt-get install -y nodejs build-essential
 npm install npm -g
 npm install bower gulp laravel-elixir gulp-imagemin gulp-image-resize -g  
+```
+
+#создаем VirtualHost для сайта
+```
+cd /etc/apache2/sites-available
+nano steklo-grup.conf
+```
+put VirtualHost text here
+```
+cd ../sites-enabled
+ln -s ../sites-available/steklo-grup.conf
+service apache2 restart
 ```
