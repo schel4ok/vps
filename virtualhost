@@ -1,8 +1,18 @@
-
 <VirtualHost *:80>
-  ServerName mysite.ru
-  DocumentRoot "/home/vagrant/projects/myapp/public"
-  <Directory "/home/vagrant/projects/myapp/public">
-    AllowOverride all
-  </Directory>
+	ServerAdmin webmaster@steklo-grup.ru
+        ServerName steklo-grup.ru 
+        ServerAlias www.steklo-grup.ru
+	DocumentRoot /var/www/steklo-grup.ru/public
+	DirectoryIndex index.php index.html index.htm
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+
+	<Directory /var/www/steklo-grup.ru/public>
+                AllowOverride All
+	</Directory>
+
 </VirtualHost>
