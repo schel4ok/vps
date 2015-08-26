@@ -62,9 +62,9 @@ npm install bower gulp laravel-elixir gulp-imagemin gulp-image-resize -g
 ```
 cd /etc/apache2/sites-available
 nano steklo-grup.conf
-```
+
 put VirtualHost text here
-```
+
 cd ../sites-enabled
 ln -s ../sites-available/steklo-grup.conf
 service apache2 restart
