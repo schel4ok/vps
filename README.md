@@ -55,7 +55,12 @@ composer global require "laravel/installer=~1.1"
 curl --silent --location https://deb.nodesource.com/setup_0.12 | bash -
 apt-get install -y nodejs build-essential
 npm install npm -g
-npm install bower gulp rimraf gulp-image-resize gulp-imagemin gulp-replace -g
+npm install bower -g
+npm install gulp -g
+npm install rimraf -g
+npm install gulp-image-resize -g
+npm install gulp-imagemin -g
+npm install gulp-replace -g
 ```
 
 #создаем VirtualHost для сайта
