@@ -29,7 +29,7 @@ apt-get install mc nano vsftpd zip unzip -y
 
 #далее ставим компоненты веб-сервера (кроме nginx, т.к. я с ним пока не разобрался)
 ```
-apt-get install apache2 php5 libapache2-mod-php5 php5-fpm mysql-server mysql-client php5-mysql  php5-curl  curl phpmyadmin git -y
+apt-get install apache2 php5 libapache2-mod-php5 php5-fpm mysql-server mysql-client php5-mysql  php5-curl  curl phpmyadmin git imagemagick -y
 ```
 когда phpMyAdmin спросит *Выберите веб-сервер, который будет автоматически настроен для запуска phpMyAdmin.*  
 Веб-сервер для автоматической перенастройки:  
@@ -55,7 +55,7 @@ composer global require "laravel/installer=~1.1"
 curl --silent --location https://deb.nodesource.com/setup_0.12 | bash -
 apt-get install -y nodejs build-essential
 npm install npm -g
-npm install bower gulp laravel-elixir gulp-imagemin gulp-image-resize -g  
+npm install bower gulp rimraf gulp-image-resize gulp-imagemin gulp-replace -g
 ```
 
 #создаем VirtualHost для сайта
