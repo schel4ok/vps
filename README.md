@@ -18,8 +18,7 @@ apt-get install
 
 теперь можно попробовать еще раз и убедиться, что ошибки больше нет
 ```
-apt-get update -y 
-apt-get upgrade -y
+apt-get update && apt-get upgrade
 ```
 
 #потом ставим разные полезные утилиты
