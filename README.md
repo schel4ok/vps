@@ -46,7 +46,7 @@ composer
 
 #устанавливаем laravel installer globally
 ```
-composer global require "laravel/installer=~1.1"
+composer global require "laravel/installer"
 ```
 
 #Installing Node.js via package manager
