@@ -1,4 +1,4 @@
-#How to keep my fork of original repository synced with original branch which I have no edit/write access.
+# How to keep my fork of original repository synced with original branch which I have no edit/write access.
 
 
 Make fork of original  project on github.
