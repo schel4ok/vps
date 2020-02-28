@@ -92,7 +92,7 @@ laravel new mysite.ru
 chown -R www-data:www-data /var/www/mysite.ru
 cd steklo-grup.ru
 chmod -R 755 .
-chmod -R 777 storage
+chmod 777 -R storage && chmod 777 -R bootstrap/cache
 git init
 git add .
 git commit -m "Init"
